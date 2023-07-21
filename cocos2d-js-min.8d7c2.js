@@ -8136,14 +8136,14 @@
 					a = null;
 				if (Array.isArray(e)) {
 					(e = (0, i.unpackJSONs)(e)).length !== t.length && cc.errorID(4915);
-					for (var c = 0; c < t.length; c++) o[t[c] + "@https://panda-man.apps.minigame.vip/assets/resources/import"] = e[c]
+					for (var c = 0; c < t.length; c++) o[t[c] + "@import"] = e[c]
 				} else {
 					var l = s._getClassId(cc.Texture2D);
 					if (e.type === l) {
 						if (e.data) {
 							var h = e.data.split("|");
 							h.length !== t.length && cc.errorID(4915);
-							for (var u = 0; u < t.length; u++) o[t[u] + "@https://panda-man.apps.minigame.vip/assets/resources/import"] = (0, i.packCustomObjData)(l, h[u], !0)
+							for (var u = 0; u < t.length; u++) o[t[u] + "@import"] = (0, i.packCustomObjData)(l, h[u], !0)
 						}
 					} else a = new Error("unmatched type pack!"), o = null
 				}
